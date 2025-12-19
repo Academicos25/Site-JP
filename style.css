@@ -1,0 +1,214 @@
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.nav-item {
+  margin: 10px;
+}
+.nav-item a {
+  color: #333;
+  font-weight: bold;
+}
+.nav-item a:hover {
+  color: #031b34;
+}
+
+/* Dropdown visual */
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 10px 0;
+  background-color: transparent;
+}
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background-image: url(/images/Jovens\ Peripatetikus.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* CARDS */
+.card {
+  background-color: #e9f1fa;
+}
+.card-custom {
+  border-radius: 12px;
+  color: #fff;
+}
+.card-custom a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* CORES DOS CARDS */
+.azul {
+  background: #6a88c9;
+}
+.marrom {
+  background: #9b6a5f;
+}
+.verde {
+  background: #4e7f85;
+}
+.lilas {
+  background: #b39ddb;
+}
+
+/* PARALLAX */
+.parallax {
+  background-image: url("https://picsum.photos/1200/800");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SOBRE JP */
+.flagship-section {
+  background: #ffffff;
+  padding: 100px 20px;
+}
+.flagship-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flagship-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.flagship-icon {
+  font-size: 100px;
+  color: #2f9e9e;
+  margin-bottom: 10px;
+}
+.flagship-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.flagship-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.flagship-column p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .flagship-content {
+    grid-template-columns: 1fr;
+  }
+}
+.faca-parte {
+  text-decoration: none;
+  color: #df0505;
+}
+
+/* FOOTER */
+.footer-dark {
+  background: linear-gradient(180deg, #0a1828, #178582);
+  color: #ffffff;
+}
+
+.footer-dark h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-dark ul li {
+  margin-bottom: 8px;
+  color: #cfd3ff;
+  cursor: pointer;
+}
+
+.footer-dark ul li:hover {
+  color: #ffffff;
+}
+
+.footer-dark input {
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.footer-dark .btn-warning {
+  background-color: #e57b3a;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.footer-dark hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-dark .social-icons {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #cfd3ff;
+}
+
+.footer-dark .small {
+  color: #cfd3ff;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #7b61ff, #4da3ff);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+#backToTop:hover {
+  transform: scale(1.1);
+}
+/* Elementos escondidos inicialmente */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.8s ease;
+}
+
+/* Quando aparecem */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
